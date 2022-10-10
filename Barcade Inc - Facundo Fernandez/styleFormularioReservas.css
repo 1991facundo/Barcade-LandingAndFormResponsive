@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+   @import url('http://fonts.cdnfonts.com/css/8bit-wonder');
+
+                
+/*COMIENZO DEL BODY*/
+
+body{
+    
+    background-image: url(./Imagenes/wallpaperbetter.jpg);
+    background-attachment:fixed
+}
+
+
+/*FIN DEL BODY*/
+
+
+/*---------------- COMIENZO DEL HEADER----------------  --*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.nameHeader{
+    font-family: '8BIT WONDER', sans-serif;
+                                                
+    font-size: 6rem;
+    color: rgb(255, 137, 137);
+    margin-bottom: 15px;
+    padding: 0;
+    text-shadow: 5px 5px 0px rgb(255, 106, 106),
+                 10px 10px 0px aquamarine,
+                 15px 15px 0px rgb(46, 189, 229),
+                 20px 20px 0px yellowgreen,
+                 25px 25px 0px rgb(50, 81, 205),
+                 30px 30px 0px rgb(250, 21, 21);
+}
+
+.wakaWaka{
+    height: 180px;
+    margin: 20px;
+}
+
+.socMedia{
+    font-size: 40px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.socMedia:hover{
+    color: blue;
+}
+
+li{
+    list-style: none;
+}
+
+/* FIN DEL HEADER */
+
+/* COMIENZO DEL MAIN */
+
+.container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+
+}
+
+
+
+.formulario{
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px ;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    
+}
+
+label{
+     
+    margin-bottom: 5px;
+}
+
+input{
+    border: 2px solid black;
+    margin: 10px 0px;
+    height: 35px;
+    width: 300px;
+}
+
+textarea{
+    height: 100px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+ .turnos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+ }
+
+
+ /* Responsive */
+
+@media (max-width: 850px) {
+
+    header{
+        justify-content: center;
+    }
+
+
+    .wakaWaka{
+        display: none;
+    }
+
+    .socMedia {
+        display: none;
+    }
+
+}
+
+/* Movil */
+
+@media (max-width: 560px) {
+
+    header{
+        margin: 0px;
+    }
+
+    .nameHeader{
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .formulario{
+        width: 300px;
+    }
+
+    input{
+        width:200px
+    }
+
+}

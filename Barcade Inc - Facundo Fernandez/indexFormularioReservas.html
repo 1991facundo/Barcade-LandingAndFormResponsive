@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleFormularioReservas.css">
+    <title>Haz tu reserva</title>
+</head>
+<body>
+
+    <!-- COMIENZO DEL HEADER -->
+
+    <header>
+        
+        <h1 class="nameHeader">BARCADE</h1>
+   
+        <img class="wakaWaka" src="./Imagenes/pacman.png" alt="pacman">
+   
+        <ul>
+         <li>
+             <a class="socMedia" href="https://www.facebook.com/BarcadiaCork">FB</a>
+             <a class="socMedia" href="https://www.instagram.com/barcadiacork/">IG</a>
+         </li>
+         </ul>
+   
+    </header>
+   
+       <!-- FIN DEL HEADER -->
+
+       <!-- COMIENZO DEL MAIN -->
+
+    <main>
+        
+        <div class="container">
+
+           
+
+            <h2>Formulario de reserva</h2>
+        
+            <p>Completa los siguientes datos por favor</p>
+
+            
+
+            <form class="formulario" action="#" method="post">
+            
+
+            <label for="">Nombre</label>
+            <input type="text" placeholder="Ingrese su nombre" alt="Ingrese su nombre" id="nombre">
+            
+            <label for="">Apellido</label>
+            <input type="text" placeholder="Ingrese su apellido" id="apellido" alt="Ingrese su apellido">
+            
+            <label for="">Email</label>
+            <input type="email" placeholder="Ingrese su email" id="email" alt="Ingrese su email">
+            
+            <label for="">Tarjeta de credito</label>
+            <input type="password" placeholder="Ingrese los 16 numeros de su tarjeta" id="tarjeta" maxlength="16" minlength="16" alt="Ingrese su tarjeta de credito">
+            
+            <label for="">Seleccione la fecha de su reserva</label>
+            <input type="date" placeholder="Ingrese la fecha de su reserva" id="fecha" alt="ingrese la fecha de la reserva">
+            
+            <label for="">Selecciona que turno queres</label>
+           
+                <div class="turnos">
+
+                    
+                        <label>Turno Tarde</label>
+                        <input type="radio" name="radio">
+                    
+                        <label>Turno Noche</label>
+                        <input type="radio" name="radio">
+                
+
+                </div>
+
+            
+
+            <label for="">Preferencias y alergias alimenticias</label>
+            <textarea id="comentarios" alt="escribe tus Preferencias y alergias alimenticias"></textarea>
+            
+            <button type="submit" alt="Enviar datos">Confirmar reserva</button>
+
+        </form>
+    </div>
+
+
+    </main>
+</body>
+</html>
